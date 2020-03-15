@@ -14,4 +14,8 @@ defmodule Finecode.Blog do
   def list_posts do
     @posts
   end
+
+  def post_by_id(id) do
+    @posts |> Enum.find(& &1.id == id)
+  end
 end
