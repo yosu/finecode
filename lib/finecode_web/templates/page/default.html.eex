@@ -1,8 +1,6 @@
 <section class="phx-hero">
-  <h1>ようこそ!</h1>
-  <p>
-  ソフトウェアエンジニアの @yosu です。このブログでは僕の興味のある技術や試してみたことについて書いていきます。
-  </p>
+  <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
+  <p>A productive web framework that<br/>does not compromise speed or maintainability.</p>
 </section>
 
 <section class="row">

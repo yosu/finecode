@@ -16,6 +16,7 @@ defmodule FinecodeWeb.Router do
   scope "/", FinecodeWeb do
     pipe_through :browser
 
+    get "/default", PageController, :default
     get "/", PageController, :index
   end
 

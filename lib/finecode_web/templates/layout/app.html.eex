@@ -14,6 +14,10 @@
         <nav role="navigation">
           <ul>
             <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
+            <!-- TODO: Routeを使ってリンク貼る -->
+            <!-- TODO: 横並びになるようにスタイリングする　-->
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
           </ul>
         </nav>
         <a href="https://phoenixframework.org/" class="phx-logo">
