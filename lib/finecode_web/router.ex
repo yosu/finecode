@@ -21,6 +21,12 @@ defmodule FinecodeWeb.Router do
     get "/about", PageController, :about
   end
 
+  scope "/blog", FinecodeWeb do
+    pipe_through :browser
+
+    get "/", BlogController, :index
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", FinecodeWeb do
   #   pipe_through :api

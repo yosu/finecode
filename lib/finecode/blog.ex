@@ -9,9 +9,9 @@ defmodule Finecode.Blog do
       Post.parse!(post_path)
     end
 
-  @posts posts
+  @posts Enum.sort_by(posts, & &1.date, {:desc, Date})
 
-  def posts do
+  def list_posts do
     @posts
   end
 end

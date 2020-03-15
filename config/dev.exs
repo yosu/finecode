@@ -52,7 +52,8 @@ config :finecode, FinecodeWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/finecode_web/(live|views)/.*(ex)$",
-      ~r"lib/finecode_web/templates/.*(eex)$"
+      ~r"lib/finecode_web/templates/.*(eex)$",
+      ~r"posts/*/.*(md)$"
     ]
   ]
 

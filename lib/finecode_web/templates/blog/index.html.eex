@@ -1,0 +1,10 @@
+<section class="row">
+  <div class="container">
+    <%= for post <- @posts do %>
+    <div class="row">
+      <h2><%= post.title %></h2>
+      <p><%= post.description %></p>
+    </div>
+    <% end %>
+  </div>
+</section>
