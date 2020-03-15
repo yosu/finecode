@@ -1,4 +1,4 @@
-#!/usr/bin/env elixir
+#!/usr/bin/env bash
 
 # Initial setup
 mix deps.get --only prod
