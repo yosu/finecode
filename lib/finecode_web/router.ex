@@ -18,6 +18,7 @@ defmodule FinecodeWeb.Router do
 
     get "/default", PageController, :default
     get "/", PageController, :index
+    get "/about", PageController, :about
   end
 
   # Other scopes may use custom stacks.
