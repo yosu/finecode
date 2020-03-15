@@ -1,3 +1,7 @@
+for app <- [:earmark, :makeup_elixir] do
+  Application.ensure_all_started(app)
+end
+
 defmodule Finecode.Blog do
   alias Finecode.Blog.Post
 

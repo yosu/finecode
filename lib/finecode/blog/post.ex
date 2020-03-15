@@ -37,7 +37,7 @@ defmodule Finecode.Blog.Post do
        do: String.trim(value)
 
   defp parse_attr(:body, value),
-       do: value
+       do: value |> Earmark.as_html!() |> Finecode.Blog.Highlighter.highlight()
 
   defp parse_attr(:tags, value),
        do: value |> String.split(",") |> Enum.map(&String.trim/1) |> Enum.sort()
