@@ -1,37 +1,7 @@
-<section>
-  <h1>ようこそ!</h1>
-  <p>
-  ソフトウェアエンジニアの @yosu です。このブログでは僕の興味のある技術や試してみたことについて書いていきます。
-  </p>
-</section>
-
-<section class="row">
-  <article class="column">
-    <h2>Resources</h2>
-    <ul>
-      <li>
-        <a href="https://hexdocs.pm/phoenix/overview.html">Guides &amp; Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix/blob/v1.4/CHANGELOG.md">v1.4 Changelog</a>
-      </li>
-    </ul>
-  </article>
-  <article class="column">
-    <h2>Help</h2>
-    <ul>
-      <li>
-        <a href="https://elixirforum.com/c/phoenix-forum">Forum</a>
-      </li>
-      <li>
-        <a href="https://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on Freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">Twitter @elixirphoenix</a>
-      </li>
-    </ul>
-  </article>
-</section>
+<div id="home" class="big-bg">
+  <section class="home-content">
+    <h1 class="page-title">ようこそ!</h1>
+    <p>プログラマー @yosu のブログです。</p>
+    <p>興味のあるテクノロジーやトライしてみたことを書いていきます。</p>
+  </section><!-- /.home-content -->
+</div><!-- /#home -->

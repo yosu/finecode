@@ -34,3 +34,28 @@
     margin: auto;
     padding: 0 4%;
 }
+
+
+/* HOME
+ ---------------------------------------- */
+.home-content {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.page-title {
+    font-size: 5rem;
+    font-weight: normal;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+#home {
+    background-image: url("/images/bg.jpg");
+    min-height: 100vh;
+}
