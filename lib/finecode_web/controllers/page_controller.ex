@@ -6,6 +6,6 @@ defmodule FinecodeWeb.PageController do
   end
 
   def about(conn, _params) do
-    render(conn, "about.html")
+    render(conn, "about.html", page_title: "About - FineCode")
   end
 end

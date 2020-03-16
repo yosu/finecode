@@ -5,7 +5,7 @@ defmodule FinecodeWeb.BlogController do
   alias FinecodeWeb.ErrorView
 
   def index(conn, _params) do
-    render(conn, "index.html", posts: Blog.list_posts())
+    render(conn, "index.html", posts: Blog.list_posts(), page_title: page_title("All posts"))
   end
 
   def show(conn, params) do
@@ -17,7 +17,11 @@ defmodule FinecodeWeb.BlogController do
         |> put_view(ErrorView)
         |> render(:"404")
       post ->
-        render(conn, "show.html", post: post)
+        render(conn, "show.html", post: post, page_title: page_title(post.title))
     end
+  end
+
+  defp page_title(text) do
+    "#{text} - FineCode Blog"
   end
 end
