@@ -10,19 +10,16 @@
     <%= csrf_meta_tag() %>
   </head>
   <body>
-    <header>
-      <section class="container">
-        <nav role="navigation">
-          <ul>
-            <!-- TODO: 横並びになるようにスタイリングする　-->
-            <li><a href="<%= Routes.blog_path(@conn, :index) %>">Blog</a></li>
-            <li><a href="<%= Routes.page_path(@conn, :about) %>">About</a></li>
-          </ul>
-        </nav>
-        <a href="/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
+    <header class="page-header wrapper">
+      <a href="/">
+        <img src="<%= Routes.static_path(@conn, "/images/logo.png") %>" alt="FineCode Logo" class="logo"/>
+      </a>
+      <nav role="navigation">
+        <ul class="main-nav">
+          <li><a href="<%= Routes.blog_path(@conn, :index) %>">Blog</a></li>
+          <li><a href="<%= Routes.page_path(@conn, :about) %>">About</a></li>
+        </ul>
+      </nav>
     </header>
     <main role="main" class="wrapper">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
