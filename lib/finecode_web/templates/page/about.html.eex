@@ -1,12 +1,23 @@
 <section>
-  <h2>このブログについて</h2>
-  <p>
-  日々ソフトウェア開発をする中での気づきや自分で試してみたことについて書いていきたいと思います。
-  </p>
-  <h2>書いている人について</h2>
-  <p>
-  はじめまして、@yosu です。ソフトウェアエンジニア、プログラマーとして日々働いています。
-  最初はWindows/Macのアプリケーション開発からスタートして、2000年頃からWeb開発に移り、主にバックエンド周りの開発をしてきました。
-  意図が分かりやすく読みやすいプログラムや変更が容易で長く使えるソフトウェアアーキテクチャに興味があります。趣味はテニスとパン作りです。
-  </p>
+  <div class="container">
+    <h2>About</h2>
+    <div class="row">
+      <div class="column">
+        <p>はじめまして、yosu です。ソフトウェアエンジニア、プログラマーとしてお仕事しています。</p>
+        <p>プログラミングの経験はWindows/Macのアプリケーション開発からスタートして、2000年頃からWeb開発に移り、主にバックエンド周りの開発をしてきました。
+        意図が分かりやすく読みやすいプログラムや、変更が容易で長く使えるソフトウェアアーキテクチャに興味があります。</p>
+        <p>趣味はパン作りで、暇があればパンをこねたり焼いたり楽しんでいます。</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h3>SNS</h3>
+        <ul class="sns-list">
+          <li>Twitter: <a href="https://twitter.com/yosu">@yosu</a></li>
+          <li>GitHub: <a href="https://github.com/yosu">yosu</a></li>
+          <li>LAPRAS: <a href="https://lapras.com/public/MUXZIPU">yosu</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>

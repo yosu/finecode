@@ -62,10 +62,15 @@
 
 /* POST Index
  ---------------------------------------- */
-
 .post-list-item {
     border: #d1d1d1 solid 1px;
     border-radius: 6px;
     margin-bottom: 2.5rem;
     padding: 2rem 2rem 0;
+}
+
+/* ABOUT
+ ---------------------------------------- */
+.sns-list {
+    list-style: none;
 }
