@@ -1,4 +1,12 @@
 <section class="container">
-  <h1><%= @post.title %></h1>
-  <%= raw @post.body %>
+  <div class="row">
+    <div class="column">
+      <div class="post">
+        <article>
+          <h1><%= @post.title %></h1>
+          <%= raw @post.body %>
+        </article>
+      </div>
+    </div>
+  </div>
 </section>

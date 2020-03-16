@@ -69,6 +69,12 @@
     padding: 2rem 2rem 0;
 }
 
+/* POST Show
+ ---------------------------------------- */
+.post article h1 {
+    font-size: 3.6rem;
+}
+
 /* ABOUT
  ---------------------------------------- */
 .sns-list {
