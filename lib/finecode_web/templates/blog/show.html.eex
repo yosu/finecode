@@ -1,8 +1,4 @@
-<section class="row">
-  <div class="container">
-    <div class="row">
-      <h1><%= @post.title %></h1>
-      <%= raw @post.body %>
-    </div>
-  </div>
+<section class="container">
+  <h1><%= @post.title %></h1>
+  <%= raw @post.body %>
 </section>
