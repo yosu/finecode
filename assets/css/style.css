@@ -30,7 +30,7 @@
 }
 
 .wrapper {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: auto;
     padding: 0 4%;
 }
@@ -58,4 +58,14 @@
 #home {
     background-image: url("/images/bg.jpg");
     min-height: 100vh;
+}
+
+/* POST Index
+ ---------------------------------------- */
+
+.post-list-item {
+    border: #d1d1d1 solid 1px;
+    border-radius: 6px;
+    margin-bottom: 2.5rem;
+    padding: 2rem 2rem 0;
 }

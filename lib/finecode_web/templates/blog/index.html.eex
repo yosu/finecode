@@ -1,9 +1,15 @@
-<section class="row">
+<section>
   <div class="container">
+    <h2>Posts</h2>
     <%= for post <- @posts do %>
     <div class="row">
-      <h2><%= link(post.title, to: Routes.blog_path(@conn, :show, post.id)) %></h2>
-      <p><%= post.description %></p>
+      <div class="column">
+        <article class="post-list-item">
+          <h3><%= link(post.title, to: Routes.blog_path(@conn, :show, post.id)) %></h3>
+          <p><%= post.date %></p>
+          <p><%= post.description %></p>
+        </article>
+      </div>
     </div>
     <% end %>
   </div>
