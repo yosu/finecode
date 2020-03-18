@@ -80,3 +80,16 @@
 .sns-list {
     list-style: none;
 }
+
+/* MOBILE
+ ---------------------------------------- */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+
+    .main-nav {
+        font-size: 1.65rem;
+    }
+}
