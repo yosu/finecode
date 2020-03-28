@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>FineCode</title>
+  <link rel="alternate" type="text/html" href="<%= Routes.page_url(@conn, :index) %>"/>
+  <link rel="self" type="application/atom+xml" href="<%= Routes.feed_url(@conn, :atom) %>"/>
+  <updated><%= @posts |> hd |> to_updated() %></updated>
+  <author>
+    <name>@yosu</name>
+  </author>
+  <id><%= feed_id() %></id>
+
+  <%= for post <- @posts do %>
+  <entry>
+    <title><%= post.title %></title>
+    <link href="<%= Routes.blog_url(@conn, :show, post.id) %>"/>
+    <id><%= entry_id(post) %></id>
+    <updated><%= to_updated(post) %></updated>
+    <summary><%= post.description %></summary>
+  </entry>
+  <% end %>
+
+</feed>

@@ -8,6 +8,7 @@
     <link rel="icon" href="<%= Routes.static_path(@conn, "/images/favicon.png") %>" />
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <link rel="alternate" href="<%= Routes.feed_url(@conn, :atom) %>" type="application/atom+xml" title="FineCode Atom Feed">
     <%= csrf_meta_tag() %>
   </head>
   <body>

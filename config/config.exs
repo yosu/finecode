@@ -23,6 +23,13 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+# Use Timezone database
+# https://github.com/lau/tzdata
+config :elixir, :time_zone_database, Tzdata.TimeZoneDatabase
+
+# Base tag URI for Atom feed
+config :finecode, :tag_uri, "tag:fine-code.com,2020"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

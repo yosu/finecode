@@ -19,6 +19,7 @@ defmodule FinecodeWeb.Router do
     get "/default", PageController, :default
     get "/", PageController, :index
     get "/about", PageController, :about
+    get "/feeds/atom.xml", FeedController, :atom
   end
 
   scope "/blog", FinecodeWeb do
