@@ -16,6 +16,7 @@ defmodule FinecodeWeb.BlogController do
         |> put_status(:not_found)
         |> put_view(ErrorView)
         |> render(:"404")
+
       post ->
         render(conn, "show.html", post: post, page_title: page_title(post.title))
     end
