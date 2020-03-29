@@ -10,12 +10,12 @@ defmodule Finecode.Blog.Post do
 
     date = Date.from_iso8601!("#{year}-#{month}-#{day}")
 
-    contents = parse_contents(id, File.read!(filename))
+    contents = parse_contents(File.read!(filename))
 
     struct!(__MODULE__, [id: id, date: date] ++ contents)
   end
 
-  defp parse_contents(id, contents) do
+  defp parse_contents(contents) do
     # Split contents into  ["==title==\n", "this title", "==tags==\n", "this, tags", ...]
     parts = Regex.split(~r/^==(\w+)==\n/m, contents, include_captures: true, trim: true)
 
