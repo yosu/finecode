@@ -12,7 +12,7 @@ config :finecode, FinecodeWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "wvhhRCD2TuSQHO1PQy0V30paHYx9sMsKXKHrqneCD8giuvXVbFRHteEsfCJzAXbV",
   render_errors: [view: FinecodeWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Finecode.PubSub, adapter: Phoenix.PubSub.PG2],
+  pubsub_server: Finecode.PubSub,
   live_view: [signing_salt: "ODI7VfLu"]
 
 # Configures Elixir's Logger
