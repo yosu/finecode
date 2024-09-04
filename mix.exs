@@ -9,7 +9,8 @@ defmodule Finecode.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      aliases: aliases()
     ]
   end
 
@@ -32,16 +33,27 @@ defmodule Finecode.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.5.0"},
+      {:phoenix, "~> 1.6.0"},
       {:phoenix_pubsub, "~> 2.0"},
-      {:phoenix_html, "~> 2.11"},
+      {:phoenix_html, "~> 3.0"},
+      {:phoenix_live_view, "~> 0.16.4"},
+      {:phoenix_live_dashboard, "~> 0.5"},
+      {:telemetry_metrics, "~> 0.6"},
+      {:telemetry_poller, "~> 0.5"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
+      {:esbuild, "~> 0.2", runtime: Mix.env() == :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.1"},
       {:earmark, "~> 1.4"},
       {:makeup_elixir, "~> 0.14"},
       {:tzdata, "~> 1.0.3"}
+    ]
+  end
+
+  defp aliases do
+    [
+      "assets.deploy": ["esbuild default --minify --loader:.jpg=file", "phx.digest"]
     ]
   end
 end
