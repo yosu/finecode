@@ -56,7 +56,7 @@
 }
 
 #home {
-    background-image: url("../static/images/bg.jpg");
+    background-image: url("../../priv/static/images/bg.jpg");
     min-height: 100vh;
 }
 
