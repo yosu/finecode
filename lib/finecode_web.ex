@@ -22,7 +22,7 @@ defmodule FinecodeWeb do
       use Phoenix.Controller, namespace: FinecodeWeb
 
       import Plug.Conn
-      import FinecodeWeb.Gettext
+      use Gettext, backend: FinecodeWeb.Gettext
       alias FinecodeWeb.Router.Helpers, as: Routes
     end
   end
@@ -40,7 +40,7 @@ defmodule FinecodeWeb do
       use Phoenix.HTML
 
       import FinecodeWeb.ErrorHelpers
-      import FinecodeWeb.Gettext
+      use Gettext, backend: FinecodeWeb.Gettext
       alias FinecodeWeb.Router.Helpers, as: Routes
     end
   end
@@ -56,7 +56,7 @@ defmodule FinecodeWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import FinecodeWeb.Gettext
+      use Gettext, backend: FinecodeWeb.Gettext
     end
   end
 
