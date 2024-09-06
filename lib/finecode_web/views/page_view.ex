@@ -1,3 +1,5 @@
 defmodule FinecodeWeb.PageView do
-  use FinecodeWeb, :view
+  use FinecodeWeb, :html
+
+  embed_templates "../templates/page/*"
 end

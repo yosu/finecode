@@ -35,7 +35,6 @@ defmodule Finecode.MixProject do
       {:phoenix, "~> 1.7.0"},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_html, "~> 3.0"},
-      {:phoenix_view, "~> 2.0"},
       {:phoenix_live_view, "~> 0.18.18"},
       {:phoenix_live_dashboard, "~> 0.7.2"},
       {:telemetry_metrics, "~> 0.6"},

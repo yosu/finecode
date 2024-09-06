@@ -1,5 +1,5 @@
 defmodule FinecodeWeb.ErrorView do
-  use FinecodeWeb, :view
+  use FinecodeWeb, :html
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.
@@ -10,7 +10,7 @@ defmodule FinecodeWeb.ErrorView do
   # By default, Phoenix returns the status message from
   # the template name. For example, "404.html" becomes
   # "Not Found".
-  def template_not_found(template, _assigns) do
+  def render(template, _assigns) do
     Phoenix.Controller.status_message_from_template(template)
   end
 end
