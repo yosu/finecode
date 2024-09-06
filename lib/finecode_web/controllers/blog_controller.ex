@@ -2,7 +2,7 @@ defmodule FinecodeWeb.BlogController do
   use FinecodeWeb, :controller
 
   alias Finecode.Blog
-  alias FinecodeWeb.ErrorView
+  alias FinecodeWeb.ErrorHTML
 
   def index(conn, _params) do
     render(conn, "index.html", posts: Blog.list_posts(), page_title: page_title("All posts"))
@@ -14,7 +14,7 @@ defmodule FinecodeWeb.BlogController do
         # TODO: かわいい & 助けになるエラーページにする
         conn
         |> put_status(:not_found)
-        |> put_view(ErrorView)
+        |> put_view(ErrorHTML)
         |> render(:"404")
 
       post ->

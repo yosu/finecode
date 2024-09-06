@@ -20,7 +20,9 @@ defmodule FinecodeWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: FinecodeWeb
+      use Phoenix.Controller,
+        formats: [:html, :xml],
+        layouts: [html: FinecodeWeb.Layouts]
 
       import Plug.Conn
       use Gettext, backend: FinecodeWeb.Gettext
@@ -39,8 +41,15 @@ defmodule FinecodeWeb do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import FinecodeWeb.ErrorHelpers
       use Gettext, backend: FinecodeWeb.Gettext
+
+      unquote(verified_routes())
+    end
+  end
+
+  def xml do
+    quote do
+      use Phoenix.Component
 
       unquote(verified_routes())
     end

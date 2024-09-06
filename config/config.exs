@@ -11,7 +11,7 @@ import Config
 config :finecode, FinecodeWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "wvhhRCD2TuSQHO1PQy0V30paHYx9sMsKXKHrqneCD8giuvXVbFRHteEsfCJzAXbV",
-  render_errors: [view: FinecodeWeb.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: FinecodeWeb.ErrorHTML, accepts: ~w(html)],
   pubsub_server: Finecode.PubSub,
   live_view: [signing_salt: "ODI7VfLu"]
 
