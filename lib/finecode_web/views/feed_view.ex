@@ -1,5 +1,5 @@
 defmodule FinecodeWeb.FeedView do
-  use FinecodeWeb, :view
+  use FinecodeWeb, :html
 
   alias Finecode.Blog.Post
 
@@ -26,4 +26,6 @@ defmodule FinecodeWeb.FeedView do
   defp tag_uri() do
     Application.fetch_env!(:finecode, :tag_uri)
   end
+
+  embed_templates "../templates/feed/*"
 end

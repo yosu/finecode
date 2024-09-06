@@ -29,6 +29,25 @@ defmodule FinecodeWeb do
     end
   end
 
+  def html do
+    quote do
+      use Phoenix.Component
+
+      import Phoenix.View
+
+      # Import convenience functions from controllers
+      import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
+
+      # Use all HTML functionality (forms, tags, etc)
+      use Phoenix.HTML
+
+      import FinecodeWeb.ErrorHelpers
+      use Gettext, backend: FinecodeWeb.Gettext
+
+      unquote(verified_routes())
+    end
+  end
+
   def view do
     quote do
       use Phoenix.View,
