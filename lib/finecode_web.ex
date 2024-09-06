@@ -6,7 +6,7 @@ defmodule FinecodeWeb do
   This can be used in your application as:
 
       use FinecodeWeb, :controller
-      use FinecodeWeb, :view
+      use FinecodeWeb, :html
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -32,27 +32,6 @@ defmodule FinecodeWeb do
   def html do
     quote do
       use Phoenix.Component
-
-      import Phoenix.View
-
-      # Import convenience functions from controllers
-      import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
-
-      # Use all HTML functionality (forms, tags, etc)
-      use Phoenix.HTML
-
-      import FinecodeWeb.ErrorHelpers
-      use Gettext, backend: FinecodeWeb.Gettext
-
-      unquote(verified_routes())
-    end
-  end
-
-  def view do
-    quote do
-      use Phoenix.View,
-        root: "lib/finecode_web/templates",
-        namespace: FinecodeWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
