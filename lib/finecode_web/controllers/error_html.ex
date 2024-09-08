@@ -1,4 +1,4 @@
-defmodule FinecodeWeb.ErrorView do
+defmodule FinecodeWeb.ErrorHTML do
   use FinecodeWeb, :html
 
   # If you want to customize a particular status code
