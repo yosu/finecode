@@ -19,6 +19,10 @@ defmodule Finecode.Blog do
     @posts
   end
 
+  def recent_posts do
+    Enum.take(@posts, 5)
+  end
+
   def post_by_id(id) do
     @posts |> Enum.find(&(&1.id == id))
   end
