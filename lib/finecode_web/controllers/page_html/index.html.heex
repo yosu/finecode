@@ -5,19 +5,4 @@
     <p>興味のあるテクノロジーやトライしてみたことを書いていきます。</p>
   </section><!-- /.home-content -->
 </div><!-- /#home -->
-<section>
-  <div class="container">
-    <h2>最新の投稿</h2>
-    <%= for post <- @recent_posts do %>
-    <div class="row">
-      <div class="column">
-        <article class="post-list-item">
-          <h3><%= link(post.title, to: ~p"/blog/#{post.id}") %></h3>
-          <p><%= post.date %></p>
-          <p><%= post.description %></p>
-        </article>
-      </div>
-    </div>
-    <% end %>
-  </div>
-</section>
+<.posts posts={@recent_posts} title="最新の投稿" />
