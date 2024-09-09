@@ -16,17 +16,11 @@ defmodule FinecodeWeb.Router do
   scope "/", FinecodeWeb do
     pipe_through :browser
 
-    get "/default", PageController, :default
     get "/", PageController, :index
     get "/about", PageController, :about
+    get "/blog/", BlogController, :index
+    get "/blog/:id", BlogController, :show
     get "/feeds/atom.xml", FeedController, :atom
-  end
-
-  scope "/blog", FinecodeWeb do
-    pipe_through :browser
-
-    get "/", BlogController, :index
-    get "/:id", BlogController, :show
   end
 
   # Other scopes may use custom stacks.
