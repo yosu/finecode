@@ -46,7 +46,7 @@ defmodule Finecode.MixProject do
       {:plug_cowboy, "~> 2.1"},
       {:earmark, "~> 1.4"},
       {:makeup_elixir, "~> 0.14"},
-      {:tzdata, "~> 1.0.3"}
+      {:tz, "~> 0.3.0"}
     ]
   end
 

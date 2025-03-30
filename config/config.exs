@@ -34,8 +34,8 @@ config :esbuild,
 config :phoenix, :json_library, Jason
 
 # Use Timezone database
-# https://github.com/lau/tzdata
-config :elixir, :time_zone_database, Tzdata.TimeZoneDatabase
+# https://hexdocs.pm/tz/0.3.0/readme.html
+config :elixir, :time_zone_database, Tz.TimeZoneDatabase
 
 # Base tag URI for Atom feed
 config :finecode, :tag_uri, "tag:fine-code.com,2020"
