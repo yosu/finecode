@@ -75,6 +75,10 @@
     font-size: 3.6rem;
 }
 
+.post article {
+    padding-bottom: 10rem;
+}
+
 /* ABOUT
  ---------------------------------------- */
 .sns-list {
