@@ -1,5 +1,5 @@
 ==title==
-daysyUI の利用
+daisyUI の利用
 
 ==author==
 yosu
