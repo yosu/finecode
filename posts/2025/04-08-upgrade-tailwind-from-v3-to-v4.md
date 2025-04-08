@@ -13,7 +13,7 @@ elixir
 
 ==body==
 
-[daisy UI を導入](http://localhost:4010/blog/use-daisy-ui) してみたのですが、Tabのスタイルがうまく当たらない問題があり、もしかしたらTailwindのバージョンがv3が原因ではないかと思い、v4にアップグレードしてみました。
+[daisy UI を導入](https://fine-code.com/blog/use-daisy-ui) してみたのですが、Tabのスタイルがうまく当たらない問題があり、もしかしたらTailwindのバージョンがv3が原因ではないかと思い、v4にアップグレードしてみました。
 v4にアップグレードすると無事デモと同じようにスタイルが当たるようになりました。
 
 少しつまずいたのでその流れを書いておきます。
@@ -95,6 +95,10 @@ plugins: [
 ```
 
 これで無事daisyUIのスタイルも当たるようになりました。
+ただ、@pluginの記述がVisual Studio Code で `Unknown at rule @plugin` という warning が出るようになってしまったので
+[PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)をインストールして解決しました。
+
+参考: https://github.com/tailwindlabs/tailwindcss/discussions/13881
 
 
 ## 最終的な差分
