@@ -9,7 +9,7 @@ docker cp dummy:/app ~/tmp/$APP
 docker rm dummy
 
 cd ~/tmp
-COPYFILE_DISABLE=1 tar zcf $APP.tar.gz $APP
+tar --format ustar -zcf $APP.tar.gz $APP
 rm -r $APP
 scp $APP.tar.gz $HOST:~/deploy
 rm $APP.tar.gz
