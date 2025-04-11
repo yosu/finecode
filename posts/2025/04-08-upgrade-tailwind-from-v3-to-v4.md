@@ -81,7 +81,7 @@ Tailwind v4 では pluginの指定方法が変わったようです。
 
 `tailwind.config.js` から以下の行を削除
 
-```js
+```javascript
 plugins: [
   require("daisyui"), // この行を削除
 ]
@@ -115,7 +115,7 @@ assets/css/app.css
 ```
 
 assets/tailwind.config.js
-```js
+```javascript
  module.exports = {
    plugins: [
 -    require("daisyui"),

@@ -49,6 +49,7 @@ defmodule Finecode.MixProject do
       {:makeup_elixir, "~> 1.0.0"},
       {:makeup_eex, "~> 2.0"},
       {:makeup_html, "~> 0.1.0"},
+      {:makeup_syntect, "~> 0.1"},
       {:tz, "~> 0.3.0"}
     ]
   end
