@@ -1,4 +1,4 @@
-for app <- [:earmark, :makeup_elixir] do
+for app <- [:earmark, :makeup_elixir, :makeup_html, :makeup_eex, :makeup_syntect] do
   Application.ensure_all_started(app)
 end
 
