@@ -139,7 +139,7 @@ before
 ```
 
 after
-```
+```heex
     <div>
       <.simple_form for={@form} as="filter" phx-submit="search" phx-target={@myself}>
         <.input field={@form[:id]} label="Id" />

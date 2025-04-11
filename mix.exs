@@ -45,7 +45,10 @@ defmodule Finecode.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.1"},
       {:earmark, "~> 1.4"},
-      {:makeup_elixir, "~> 0.14"},
+      {:makeup, "~> 1.2.1"},
+      {:makeup_elixir, "~> 1.0.0"},
+      {:makeup_eex, "~> 2.0"},
+      {:makeup_html, "~> 0.1.0"},
       {:tz, "~> 0.3.0"}
     ]
   end
