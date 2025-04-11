@@ -9,7 +9,7 @@ yosu
 Phoenix 1.7 で Tailwind v3 から v4 へのアップグレード手順です。
 
 ==tags==
-elixir
+elixir,tailwind
 
 ==body==
 

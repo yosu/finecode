@@ -9,7 +9,7 @@ yosu
 Phoenix 1.7 で daisyUI を利用するためのまとめです。
 
 ==tags==
-elixir
+elixir,phoenix,daisyui
 
 ==body==
 
